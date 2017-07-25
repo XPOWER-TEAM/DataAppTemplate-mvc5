@@ -3,8 +3,9 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using DataAppTemplate.DAL.Models;
 
-namespace DataAppTemplate.Web.Models
+namespace DataAppTemplate.DAL
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
@@ -29,5 +30,8 @@ namespace DataAppTemplate.Web.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet <Lot> Lots { get; set; }
+        public DbSet <Subdivision> Subdivisions { get; set; }
     }
 }

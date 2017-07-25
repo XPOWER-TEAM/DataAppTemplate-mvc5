@@ -9,6 +9,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using DataAppTemplate.Web.Models;
+using DataAppTemplate.DAL;
 
 namespace DataAppTemplate.Web.Controllers
 {
